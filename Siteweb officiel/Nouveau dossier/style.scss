@@ -1,0 +1,132 @@
+
+$font-color: #fff;
+$background : rgb(82, 78, 78);
+$font-weight : 700;
+
+
+* {
+    box-sizing: content-box;
+}
+
+%border {
+    border-radius: 15px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $font-color;
+
+    a:hover {
+        color: $font-color;
+    }
+}
+
+%flexbox {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+%flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.container {
+    display: flex;
+    aside {
+        font-size: 1em;
+        color: $font-color;
+        background: $background;
+        padding: 10px;
+        @extend %flex-col;
+        @extend %border;
+
+        .reseau-social {
+            @extend %flexbox;
+            
+            & a {
+            color: $font-color;
+            }
+
+        }
+    }
+
+    section {
+        font-size: 1em;
+        color: $font-color;
+        background: $background;
+        padding: 0 0 10px 10px;
+        margin-left: 20px;
+        width: 1045px;
+        @extend %border;
+        }
+}
+    nav {
+        width: 35%;
+        margin-left: auto;
+        border: 1px solid white;
+        font-weight: $font-weight;
+
+        ul {
+        @extend %flexbox;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        & li {
+            color: #fff;
+            padding: 10px 5px;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $font-color;
+        }
+
+        }
+    }
+
+    .contend-exp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        article {
+            padding: 10px 0;
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+
+    .yoyo {
+        padding-top: 30px;
+
+        & .prés-1 {
+            padding: 10px;
+        }
+        & .prés-2 {
+            padding: 10px;
+        }
+        & .prés-3 {
+            padding: 10px;
+        }
+        & .prés-4 {
+            padding: 10px;
+        }
+    }
+

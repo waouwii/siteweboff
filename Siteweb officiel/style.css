@@ -1,0 +1,180 @@
+.profil, aside .presentation, section article, .list-interet li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside .presentation ul, section ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* main */
+.content-main {
+  width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid gray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "1 2" "3 4";
+}
+
+/* header */
+header {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  /* @extend %flexbox-inline; */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: "1 2";
+}
+
+header .photo-profil {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .profil {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.profil {
+  padding: 40px;
+}
+
+.profession {
+  background: #f1db12;
+  font-size: 0.9em;
+  width: auto;
+  color: black;
+  padding: 2px;
+}
+
+span {
+  margin-bottom: 20px;
+}
+
+/* aside */
+aside {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  background: #292935;
+  color: #fff;
+  font-size: 1em;
+}
+
+aside .presentation {
+  padding-left: 20px;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.date-school ul {
+  padding: 0;
+  margin: 0;
+}
+
+.date-school ul p {
+  margin: 0;
+}
+
+.phone ul {
+  padding: 0;
+  margin: 0;
+}
+
+.phone ul li {
+  padding-bottom: 10px;
+}
+
+.phone ul p {
+  margin: 0;
+}
+
+.content-edu {
+  padding: 20px;
+}
+
+/* section */
+section {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  background: #22222e;
+  color: #fff;
+  font-size: 1em;
+}
+
+section article {
+  padding: 20px;
+}
+
+.interet ul li a {
+  color: #f1db12;
+}
+
+/* interet */
+.list-interet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.list-interet li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.list-interet a {
+  text-decoration: none;
+}
+
+.list-interet img {
+  width: 60px;
+  height: auto;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
