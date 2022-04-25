@@ -1,0 +1,58 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+$footerbackgroud: #000000;
+$linkcolor : #fff;
+
+body, html {
+    font-size: 16px;
+    width: 100%;
+}
+a {
+    color: $linkcolor;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.masterheader {
+    background-image: url(./pictures/pexels-pixabay-260922.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+footer {
+    background-color: $footerbackgroud ;
+    width: 100%;
+    padding: 20px;
+}
+
+#menu_title {
+    font-size: 6em;
+}
+
+.burger_img {
+    & img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
